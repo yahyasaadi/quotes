@@ -1,4 +1,5 @@
 <!-- Form section -->
+<!-- ADD ngModel TO THE FORM BELOW AND THE NAME VARIABLES -->
 <section class="quoteForm">
   <div id="contact">
     <h3>QUOTE FORM</h3>
@@ -17,4 +18,12 @@
         <button class="submit-btn">Submit</button>
     </form>
 </div>
+</section>
+
+<section>
+  <ul *ngFor = 'let quote of quotes'>
+    <li>{{quote.quote}}</li>
+    <li>{{quote.quoteAuthor}}</li>
+    <li>{{quote.name}}</li>
+  </ul>
 </section>
