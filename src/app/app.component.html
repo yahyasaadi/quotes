@@ -4,18 +4,18 @@
   <div id="contact">
     <h3>QUOTE FORM</h3>
     <form id="form" action="" method="post">
-        <textarea id="message" rows="10" cols="77" name="message" placeholder="Quote"></textarea>
+        <textarea id="message" rows="10" cols="77" name="message" placeholder="Quote" [(NgModel)]="quote"></textarea>
         <br>
         <div class="row inputs">
           <div class="col-md-6">
-              <input type="text" id="name" name="name" placeholder="Author of quote">
+              <input type="text" id="name" name="name" placeholder="Author of quote" [(NgModel)]="quoteAuthor">
           </div>
           <div class="col-md-6">
-              <input type="text" id="submitee" name="submitee" placeholder="Name of person who submitted the quote">
+              <input type="text" id="submitee" name="submitee" placeholder="Name of person who submitted the quote" [(NgModel)]="name">
           </div>
         </div>
         <br>
-        <button class="submit-btn">Submit</button>
+        <button class="submit-btn" (click)='addQuotes()'>Submit</button>
     </form>
 </div>
 </section>
