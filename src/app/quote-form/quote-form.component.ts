@@ -27,6 +27,11 @@ export class QuoteFormComponent implements OnInit {
       quote: 'I was born at a very young age',
       quoteAuthor: 'Benjamin Button',
       name: 'Yahya Saadi'
+    },
+    {
+      quote: 'We are not here to take part, we are here to take over',
+      quoteAuthor: 'Conor McGregor',
+      name: 'Yahya Saadi'
     }
   ]
 
