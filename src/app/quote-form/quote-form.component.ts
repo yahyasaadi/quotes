@@ -47,6 +47,11 @@ export class QuoteFormComponent implements OnInit {
       name : this.name
     }
     this.quotes.push(newQuote)
+
+    // clear the input fields for another quote
+    this.quote = '';
+    this.quoteAuthor = '';
+    this.name = '';
   }
 
 }
