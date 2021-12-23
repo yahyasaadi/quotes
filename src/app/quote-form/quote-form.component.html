@@ -1,4 +1,8 @@
-<p>quote-form works!</p>
+<!-- <p>quote-form works!</p> -->
+<!-- navbar -->
+<nav class="navbar">
+  <h1>QuotesGame</h1>
+</nav>
 <!-- Form section -->
 <!-- ADD ngModel TO THE FORM BELOW AND THE NAME VARIABLES -->
 <section class="quoteForm">
@@ -22,9 +26,10 @@
 </section>
   
 <section>
-    <ul *ngFor = 'let quote of quotes'>
-      <li>{{quote.quote}}</li>
-      <li>{{quote.quoteAuthor}}</li>
-      <li>{{quote.name}}</li>
-    </ul>
+  <ul *ngFor = 'let quote of quotes'>
+    <li>{{quote.quote}}</li>
+    <li>{{quote.quoteAuthor}}</li>
+    <li>{{quote.name}}</li>
+  </ul>
+    <app-quote-details></app-quote-details>
 </section>
