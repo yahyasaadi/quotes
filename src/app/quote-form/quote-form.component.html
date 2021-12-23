@@ -28,9 +28,8 @@
 <section>
   <ul *ngFor = 'let quote of quotes'>
     <li>{{quote.quote}}</li>
-    <li>{{quote.quoteAuthor}}</li>
-    <li>{{quote.name}}</li>
+    <app-quote-details [quote]='quote'></app-quote-details>
+    <!-- <li>{{quote.quoteAuthor}}</li>
+    <li>{{quote.name}}</li> -->
   </ul>
-  
-    <app-quote-details></app-quote-details>
 </section>
