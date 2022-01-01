@@ -9,7 +9,7 @@ import { QuoteFormComponent } from '../quote-form/quote-form.component';
 })
 export class QuoteDetailsComponent implements OnInit {
 
-  @Input() quote!: Quotes
+  @Input() childQuote!: Quotes
   constructor() { }
 
   ngOnInit(): void {
