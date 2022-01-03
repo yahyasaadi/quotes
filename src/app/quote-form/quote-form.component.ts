@@ -54,4 +54,10 @@ export class QuoteFormComponent implements OnInit {
     this.name = '';
   }
 
+  completeDelete(isClicked: boolean, index:number){
+    if (isClicked){
+      this.quotes.splice(index, 1)
+    }
+  }
+
 }
