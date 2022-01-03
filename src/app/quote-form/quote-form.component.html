@@ -26,7 +26,8 @@
 </section>
   
 <section>
-  <ul *ngFor = 'let quote of quotes'>
+  <!-- to check the #val variable -->
+  <ul *ngFor = 'let quote of quotes' #val> 
     <li>{{quote.quote}}</li>
     <app-quote-details [childQuote]='quote'></app-quote-details>
     <!-- <li>{{quote.quoteAuthor}}</li>
