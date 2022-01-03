@@ -17,8 +17,8 @@ export class QuoteDetailsComponent implements OnInit {
   }
 
   // Function to delete a function
-  deleteQuote(qToDelete: Quotes){
-    
+  deleteQuote(dQuote: boolean){
+    this.isClicked.emit(dQuote)
   }
 
 }
