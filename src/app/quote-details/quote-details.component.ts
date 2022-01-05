@@ -11,8 +11,7 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Input() childQuote!: Quotes
   @Output() isClicked = new EventEmitter<boolean>()
-  @Output() isLiked = new EventEmitter<boolean>()
-  @Output() isDisliked = new EventEmitter<boolean>()
+  
   constructor() { }
 
   ngOnInit(): void {
