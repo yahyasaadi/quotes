@@ -11,6 +11,8 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Input() childQuote!: Quotes
   @Output() isClicked = new EventEmitter<boolean>()
+  @Output() isLiked = new EventEmitter<boolean>()
+  @Output() isDisliked = new EventEmitter<boolean>()
   constructor() { }
 
   ngOnInit(): void {
@@ -19,6 +21,18 @@ export class QuoteDetailsComponent implements OnInit {
   // Function to delete a function
   deleteQuote(dQuote: boolean){
     this.isClicked.emit(dQuote)
+  }
+
+
+  public likeCount = 0
+  public disLikeCount = 0
+
+  likeCounter(){
+    this.likeCount ++
+  }
+
+  disLikeCounter(){
+    this.disLikeCount ++
   }
 
 }

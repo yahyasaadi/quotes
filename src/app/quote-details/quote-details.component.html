@@ -3,11 +3,11 @@
 <p>
     <li>{{childQuote.quoteAuthor}}</li>
     <li>{{childQuote.name}}</li>
-</p>
+<p>
 
 <div class=" likeOrDislike col">
-    <p class="btn btn-success"><i class="far fa-thumbs-up"></i></p>
-    <p class="btn btn-danger"><i class="far fa-thumbs-down"></i></p>
+    <p class="btn btn-success"><i class="far fa-thumbs-up" (click)='likeCounter()'>{{likeCount}}</i></p>
+    <p class="btn btn-danger"><i class="far fa-thumbs-down" (click)='disLikeCounter()'>{{disLikeCount}}</i></p>
     <p><i class="far fa-trash-alt" (click)='deleteQuote(true)'></i></p>
 </div>
 

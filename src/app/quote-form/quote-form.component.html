@@ -20,16 +20,16 @@
             </div>
           </div>
           <br>
-          <button class="submit-btn" (click)='addQuote()'>Submit</button>
+          <button class="btn btn-primary p-2" (click)='addQuote()'>Submit</button>
       </form>
     </div>
 </section>
   
-<section>
-  <!-- to check the #val variable -->
-  <ul *ngFor = 'let quote of quotes; let i = index' #val> 
+<section class="mt-5">
+  
+  <ul *ngFor = 'let quote of quotes; let i = index'> 
     <li>{{quote.quote}}</li>
-    <app-quote-details [childQuote]='quote' (isClicked) = 'completeDelete($event, i)'></app-quote-details>
+    <app-quote-details [childQuote]='quote' (isClicked) = 'completeDelete($event, i)' ></app-quote-details>
     <!-- <li>{{quote.quoteAuthor}}</li>
     <li>{{quote.name}}</li> -->
   </ul>
