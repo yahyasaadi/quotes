@@ -30,7 +30,5 @@
   <ul *ngFor = 'let quote of quotes; let i = index'> 
     <li>{{quote.quote}}</li>
     <app-quote-details [childQuote]='quote' (isClicked) = 'completeDelete($event, i)' ></app-quote-details>
-    <!-- <li>{{quote.quoteAuthor}}</li>
-    <li>{{quote.name}}</li> -->
   </ul>
 </section>
