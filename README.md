@@ -27,7 +27,7 @@ If you want to have the project on your computer, you can:
 
 ## Support and contact details
 You can reach me on:
-* [Gmail](yahyasnoor@gmail.com)
+* Gmail: yahyasnoor@gmail.com
 * [twitter](https://twitter.com/yahyasnoor)
 
 ## License
