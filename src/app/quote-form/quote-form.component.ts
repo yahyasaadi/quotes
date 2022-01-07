@@ -15,7 +15,7 @@ export class QuoteFormComponent implements OnInit {
 
   quotes: Quotes[] = [
     {
-      quote: 'Veni, vidi, vici',
+      quote: 'Veni, vidi, vici (I came, I saw, I conquered)',
       quoteAuthor: 'Julius Caesar',
       name: 'Yahya Saadi'
     },
