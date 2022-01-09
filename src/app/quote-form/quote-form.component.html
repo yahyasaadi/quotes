@@ -6,23 +6,17 @@
 <!-- Form section -->
 <!-- ADD ngModel TO THE FORM BELOW AND THE NAME VARIABLES -->
 <section class="quoteForm">
-    <div id="contact">
       <h3>QUOTE FORM</h3>
       <form id="form" action="" method="post">
-          <textarea id="message" rows="10" cols="77" name="message" placeholder="Quote" [(ngModel)]= 'quote'></textarea>
+          <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="Quote" [(ngModel)]= 'quote'></textarea>
           <br>
-          <div class="row inputs">
-            <div class="col-md-6">
-                <input type="text" id="name" name="name" placeholder="Author of quote" [(ngModel)]= 'quoteAuthor'>
-            </div>
-            <div class="col-md-6">
-                <input type="text" id="submitee" name="submitee" placeholder="Name of person who submitted the quote" [(ngModel)]= 'name'>
-            </div>
+          <div class="inputs d-flex flex-column">
+              <input type="text" id="name" name="name" placeholder="Author of quote" [(ngModel)]= 'quoteAuthor'>
+              <input type="text" id="submitee" name="submitee" placeholder="Name of person who submitted the quote" [(ngModel)]= 'name'>
           </div>
           <br>
           <button class="btn btn-primary p-2" (click)='addQuote()'>Submit</button>
       </form>
-    </div>
 </section>
   
 <section class="mt-5">
