@@ -21,22 +21,17 @@
     padding: 0 25vw;
 }
 
-/* .row.input {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-} */
 
 .inputs {
     gap: 2rem;
     width: 50%;
-    /* border: red solid; */
 }
 
 
 li {
     list-style: none;
 }
+
 
 
 @media screen and (max-width: 48rem){
