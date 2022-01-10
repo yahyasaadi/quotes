@@ -52,7 +52,10 @@ export class QuoteFormComponent implements OnInit {
 
   completeDelete(isClicked: boolean, index:number){
     if (isClicked){
-      this.quotes.splice(index, 1)
+      let del = confirm(`Are you sure you wan to delete ${this.quotes[index].quote}`)
+      if (del){
+        this.quotes.splice(index, 1)
+      }
     }
   }
 
